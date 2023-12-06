@@ -1,7 +1,7 @@
 # UM Additional User Columns
 Extension to Ultimate Member for additional User Columns in the WP All Users page.
 
-## UM Settingsn -> General -> Users
+## UM Settings -> General -> Users
 1. Additional User Columns - meta_key:label - Add one meta_key:label per line for display in the WP All Users page.
 
 ## Translations or Text changes
