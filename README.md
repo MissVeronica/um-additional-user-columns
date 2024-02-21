@@ -9,7 +9,7 @@ Extension to Ultimate Member for additional User Columns in the WP All Users pag
 2. https://wordpress.org/plugins/say-what/
 
 ## Updates
-None
+1. Version 1.1.0 Updated for UM 2.8.3
 
 ## Installation
 1. Install by downloading the plugin ZIP file and install as a new Plugin, which you upload in WordPress -> Plugins -> Add New -> Upload Plugin.
