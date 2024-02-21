@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     Ultimate Member - Additional User Columns
  * Description:     Extension to Ultimate Member for additional User Columns in the WP All Users page.
- * Version:         1.0.0
+ * Version:         1.1.0
  * Requires PHP:    7.4
  * Author:          Miss Veronica
  * License:         GPL v2 or later
@@ -10,7 +10,7 @@
  * Author URI:      https://github.com/MissVeronica
  * Text Domain:     ultimate-member
  * Domain Path:     /languages
- * UM version:      2.7.0
+ * UM version:      2.8.3
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; 
@@ -97,12 +97,15 @@ Class UM_Additional_User_Columns {
 
     public function um_settings_structure_user_new_columns( $settings_structure ) {
 
-        $settings_structure['']['sections']['users']['fields'][] = array(
+        $settings_structure['']['sections']['users']['form_sections']['new_columns_items']['title']       = __( 'Additional User Columns', 'ultimate-member' );
+        $settings_structure['']['sections']['users']['form_sections']['new_columns_items']['description'] = __( 'Plugin version 1.1.0 - tested with UM 2.8.3', 'ultimate-member' );
+
+        $settings_structure['']['sections']['users']['form_sections']['new_columns_items']['fields'][] = array(
             'id'            => 'um_new_columns_items_list',
             'type'          => 'textarea',
             'size'          => 'medium',
-            'label'         => __( 'Additional User Columns - meta_key:label', 'ultimate-member' ),
-            'tooltip'       => __( 'Add one meta_key:label per line for display in the WP All Users page.', 'ultimate-member' ),
+            'label'         => __( 'meta_key:label', 'ultimate-member' ),
+            'description'   => __( 'Add one meta_key:label per line for display in the WP All Users page.', 'ultimate-member' ),
         );
 
         return $settings_structure;
