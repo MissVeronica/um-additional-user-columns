@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     Ultimate Member - Additional User Columns
  * Description:     Extension to Ultimate Member for additional User Columns in the WP All Users page.
- * Version:         1.1.0
+ * Version:         1.2.0
  * Requires PHP:    7.4
  * Author:          Miss Veronica
  * License:         GPL v2 or later
@@ -10,7 +10,7 @@
  * Author URI:      https://github.com/MissVeronica
  * Text Domain:     ultimate-member
  * Domain Path:     /languages
- * UM version:      2.8.3
+ * UM version:      2.8.5
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; 
@@ -73,6 +73,10 @@ Class UM_Additional_User_Columns {
 
                 um_fetch_user( $user_id );
                 $value = um_user( $meta_key );
+
+                if ( is_array( $value )) {
+                    $value = implode( ',', $value );
+                }
 
                 if( empty( $value )) {
                     $value = '-';
