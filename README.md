@@ -10,6 +10,7 @@ Extension to Ultimate Member for additional User Columns in the WP All Users pag
 
 ## Updates
 1. Version 1.1.0 Updated for UM 2.8.3
+2. Version 1,2.0 Support for array values.
 
 ## Installation
 1. Install by downloading the plugin ZIP file and install as a new Plugin, which you upload in WordPress -> Plugins -> Add New -> Upload Plugin.
